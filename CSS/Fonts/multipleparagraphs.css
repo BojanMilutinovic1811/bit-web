@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'RammettoOne-Regular', cursive;
+    src: url("Rammetto_One/RammettoOne-Regular.ttf");
+}
+
+#first {
+    font-family: 'Rammetto One', cursive;;
+    font-size:150%;
+ }
+
+#second {
+    font-family: 'Times New Roman', Times, serif;}
+
+#third { 
+    font-family: Courier New, Courier, monospace;
+text-transform: uppercase;}
+
+#fourth{
+    font-family: cursive;
+    font-style:oblique;
+    text-transform: lowercase;
+    text-decoration: line-through;
+
+}
+#fifth {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 
+    text-transform: capitalize;
+    font-size: 200%;
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+q {
+    font-family: fantasy;
+}
+
+body{font-size: 1.5em;
+font-weight:bold;}
+
+
+span{font-weight: bold;
+font-style: italic;
+font-size: 130%}
+

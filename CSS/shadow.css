@@ -1,0 +1,33 @@
+ul {
+    font-size: 300%;
+}
+
+ul>li>a{
+    text-shadow: 12px 9px 1px rgb(151, 156, 153);
+ }
+a:link {
+    color: red;
+
+}
+a:visited { 
+    color: black;
+
+}
+a:hover {
+    color: green;
+
+}
+a:active {
+    color: blue;
+}
+td:nth-child(2n+1){
+    background-color:rgb(245, 230, 230);
+    
+}
+tr:nth-child(2n+1) {
+    background-color: rgb(209, 17, 17);
+    
+}
+tr :nth-of-type(2n+1){
+    background-color: aqua;
+}
