@@ -1,0 +1,27 @@
+
+
+table{
+    margin:auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-collapse: collapse;
+    
+}
+
+th{
+    background-color: rgb(133, 36, 36);
+    color: white;
+}
+
+img{
+    height: 100px;
+        }
+
+
+tr:nth-child(2n+1){
+        background-color: rgb(218, 210, 210);
+    }
+
+table>tbody>tr:hover{
+        background-color: rgb(231, 172, 10);
+       }
