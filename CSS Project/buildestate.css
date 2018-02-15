@@ -9,24 +9,18 @@
         background-repeat: none;
         color: white;
         text-align: center;
-        /* height: 236px; */
-        font-size: 13px;
-        padding: 10%;
+        font-size: 11px;
+        padding: 5%;
         width: 100%;
     }
     
-    header>h1 {
-        width: 90%;
-        margin: auto;
-    }
-    
-    h3 {
+    #readmore {
         background-color: rgb(65, 113, 218);
-        width: 30%;
+        width: 33%;
         margin: auto;
         border-radius: 10px;
         margin-top: 20px;
-        padding: 7px
+        padding: 5px;
     }
     
     #buildestate {
@@ -56,53 +50,58 @@
         color: white;
         padding: 0px;
         margin: 16px 17px;
+        
     }
     
     .navigation {
         padding: 7px;
     }
     
-    article {
+    main>article {
         width: 90%;
         margin: auto;
-    }
-    
-    article * {
         padding: 5px;
     }
+    
     
     .articletitle {
         text-align: center;
         border-bottom: solid black 2px;
         width: 53%;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 35px;
     }
     
-    #headArticle>h2 {
+    .welcome>h2 {
         color: rgb(84, 197, 241);
         margin-top: 20px;
         padding-left: 15px;
         margin-bottom: 10px;
     }
     
-    #headArticle>ul {
+    .welcome>ul {
         color: gray;
-        list-style-image: url('images/arrow_bullet.png')
+        list-style-image: url('images/arrow_bullet.png');
+        list-style-position: inside;
+        padding: 0;
+        margin: 15px 0px;
+    }
+    .welcome>ul>li {
+        padding: 5px;
     }
     
     #articleimg {
         width: 100%;
     }
     
-    section {
+    .whatpeoplesay {
         background-color: rgb(84, 197, 241);
         color: white;
         margin-top: 10px;
         padding: 10px;
     }
     
-    section>img {
+    .whatpeoplesay>img {
         border: white solid 2px;
         width: 25%;
         border-radius: 50%;
@@ -110,13 +109,13 @@
         padding: 3px;
     }
     
-    #whatpeoplesay>section>h4 {
-        margin-top: 30px;
+    .whatpeoplesay>h4 {
+        margin-top: 8%;
         float: left;
         color: black;
     }
     
-    section>p {
+    .whatpeoplesay>p {
         clear: left;
     }
     
@@ -124,11 +123,22 @@
         text-align: center;
         width: 100%;
     }
+    .contact {
+        color: white;
+        text-align: center;
+        
+    }
+    .contactimages {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
     
     #green {
         background-color: rgb(94, 224, 148);
     }
-    
+        
     #pink {
         background-color: rgb(214, 61, 120);
     }
@@ -137,12 +147,8 @@
         background-color: rgb(32, 88, 209);
     }
     
-    #getintouch>section>h4 {
-        color: white;
-        text-align: center;
-    }
-    
     #getintouch>section {
+        padding: 15px;
         margin: 0;
     }
     
@@ -152,6 +158,39 @@
     
     iframe {
         width: 100%;
+    }
+    form {
+        margin-top: 35px;
+        padding: 5%;
+        margin: auto;
+    }
+    .forminput {
+        width:95%;
+        padding: 3%;
+        margin:auto;
+        margin-bottom: 10px;
+    }
+    #submit {
+        background-color: orange;
+        color: white;
+        border-radius: 5px;
+    }
+
+    footer {
+        background-color: rgb(58, 57, 57);
+        color: white; 
+        text-align: center;
+        padding: 10px;
+    }
+    footer>ul>li {
+        float: left;
+        list-style-type: none;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+    footer>ul {
+        overflow: hidden;
+        padding: 5px;
     }
     
     @media(min-width:768px) {
