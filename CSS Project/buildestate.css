@@ -1,0 +1,177 @@
+        * {
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    header {
+        background-image: url("images/banner3.jpg");
+        background-size: cover;
+        background-repeat: none;
+        color: white;
+        text-align: center;
+        /* height: 236px; */
+        font-size: 13px;
+        padding: 10%;
+        width: 100%;
+    }
+    
+    header>h1 {
+        width: 90%;
+        margin: auto;
+    }
+    
+    h3 {
+        background-color: rgb(65, 113, 218);
+        width: 30%;
+        margin: auto;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 7px
+    }
+    
+    #buildestate {
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    #build {
+        color: orange;
+        border: 3px gray solid;
+        border-right: none;
+        display: inline;
+        padding-left: 10px;
+    }
+    
+    #estate {
+        display: inline;
+        color: gray;
+    }
+    
+    .navli {
+        margin-top: 5px;
+        background-color: rgb(84, 197, 241);
+        padding: 5px;
+        list-style: none;
+        text-align: center;
+        color: white;
+        padding: 0px;
+        margin: 16px 17px;
+    }
+    
+    .navigation {
+        padding: 7px;
+    }
+    
+    article {
+        width: 90%;
+        margin: auto;
+    }
+    
+    article * {
+        padding: 5px;
+    }
+    
+    .articletitle {
+        text-align: center;
+        border-bottom: solid black 2px;
+        width: 53%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    #headArticle>h2 {
+        color: rgb(84, 197, 241);
+        margin-top: 20px;
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+    
+    #headArticle>ul {
+        color: gray;
+        list-style-image: url('images/arrow_bullet.png')
+    }
+    
+    #articleimg {
+        width: 100%;
+    }
+    
+    section {
+        background-color: rgb(84, 197, 241);
+        color: white;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+    section>img {
+        border: white solid 2px;
+        width: 25%;
+        border-radius: 50%;
+        float: left;
+        padding: 3px;
+    }
+    
+    #whatpeoplesay>section>h4 {
+        margin-top: 30px;
+        float: left;
+        color: black;
+    }
+    
+    section>p {
+        clear: left;
+    }
+    
+    #getintouch {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #green {
+        background-color: rgb(94, 224, 148);
+    }
+    
+    #pink {
+        background-color: rgb(214, 61, 120);
+    }
+    
+    #blue {
+        background-color: rgb(32, 88, 209);
+    }
+    
+    #getintouch>section>h4 {
+        color: white;
+        text-align: center;
+    }
+    
+    #getintouch>section {
+        margin: 0;
+    }
+    
+    #getintouch>h1 {
+        margin-bottom: 20px;
+    }
+    
+    iframe {
+        width: 100%;
+    }
+    
+    @media(min-width:768px) {
+        header {
+            position: relative;
+        }
+        #buildestate {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 10px;
+        }
+        .navli {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            overflow: hidden;
+            background-color: transparent;
+        }
+        .navigation {
+            float: left;
+            background-color: none;
+        }
