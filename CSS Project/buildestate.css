@@ -12,6 +12,7 @@
         font-size: 11px;
         padding: 5%;
         width: 100%;
+        margin-bottom: 5%;
     }
     
     #readmore {
@@ -30,7 +31,7 @@
     
     #build {
         color: orange;
-        border: 3px gray solid;
+        border: 3px rgb(92, 92, 92) solid;
         border-right: none;
         display: inline;
         padding-left: 10px;
@@ -38,7 +39,7 @@
     
     #estate {
         display: inline;
-        color: gray;
+        color: rgb(92, 92, 92);
     }
     
     .navli {
@@ -60,21 +61,22 @@
     main>article {
         width: 90%;
         margin: auto;
-        padding: 5px;
+        padding: 5px;    
     }
     
     
     .articletitle {
         text-align: center;
         border-bottom: solid black 2px;
-        width: 53%;
+        width: 40%;
         margin: auto;
-        margin-top: 35px;
+        margin-bottom: 7%;
+        margin-top: 7%;
+
     }
     
     .welcome>h2 {
         color: rgb(84, 197, 241);
-        margin-top: 20px;
         padding-left: 15px;
         margin-bottom: 10px;
     }
@@ -92,6 +94,7 @@
     
     #articleimg {
         width: 100%;
+        margin-bottom:5%;
     }
     
     .whatpeoplesay {
@@ -126,6 +129,7 @@
     .contact {
         color: white;
         text-align: center;
+        padding: 10%;
         
     }
     .contactimages {
@@ -148,12 +152,11 @@
     }
     
     #getintouch>section {
-        padding: 15px;
+        
         margin: 0;
     }
-    
-    #getintouch>h1 {
-        margin-bottom: 20px;
+    #house {
+        background-color: rgb(101, 167, 167)
     }
     
     iframe {
@@ -163,6 +166,8 @@
         margin-top: 35px;
         padding: 5%;
         margin: auto;
+        padding-top: 0;
+        width: 98%;
     }
     .forminput {
         width:95%;
@@ -180,28 +185,45 @@
         background-color: rgb(58, 57, 57);
         color: white; 
         text-align: center;
-        padding: 10px;
+        padding: 4%;
     }
-    footer>ul>li {
-        float: left;
-        list-style-type: none;
-        margin-right: 5px;
-        margin-bottom: 10px;
+
+    table {
+        width: 80%;
+        margin: auto;
     }
-    footer>ul {
-        overflow: hidden;
-        padding: 5px;
+    a:hover, a:visited, a:link, a:active {
+        text-decoration: none;
+        color: inherit;
     }
     
     @media(min-width:768px) {
+
         header {
             position: relative;
+            padding: 18%; 
+        }
+        header>h1 {
+            font-size: 37px;
+        }
+
+        #readmore {
+            width: 20%;
+            margin-top:7%;
+            font-size: 16px;
         }
         #buildestate {
             position: absolute;
             top: 0;
             left: 0;
             margin: 10px;
+        }
+        #build {
+            border: 4px rgb(255, 255, 255) solid; 
+            border-right: none;
+        }
+        #estate {
+            color:white; 
         }
         .navli {
             position: absolute;
@@ -212,5 +234,75 @@
         }
         .navigation {
             float: left;
-            background-color: none;
         }
+        main>article {
+            font-size: 17px;
+        }
+        
+        .welcome, .whatpeoplesay, .contact {
+            float:left;
+            width: 49%;
+            margin-left: 1%;
+        }
+        #articleimg {
+            margin-bottom: 0;
+        }
+        #headArticle, #whatpeoplesay, #getintouch, #form {
+            overflow: hidden;
+        }
+        
+        .contact {
+            height: 230px;
+            width: 50%;
+                    }
+
+        iframe {
+            height: 460px; 
+        }
+        .forminput {
+            float: left;
+            width: 32%;
+            margin-right: 1%;
+        }
+        #textarea {
+            width: 98%;
+        }
+        table {
+            width: 60%;
+        }
+        .articletitle {
+            font-size: 34px;
+        }
+        
+    }
+    @media(min-width:1200px) {
+    
+        header {
+            padding: 20%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        header>h1 {
+            font-size: 40px;
+        }
+        #readmore {
+            width: 12%;
+            margin-top: 3%;
+        }
+        #headArticle, #form {
+            width: 80%;
+            margin: auto; 
+        }
+        .welcome {
+            width: 32%;
+        }
+        .whatpeoplesay {
+            width: 32%;
+        }
+        .contact {
+            width: 25%;
+            padding: 5%;
+        }
+    
+    
+    }
