@@ -3,6 +3,8 @@ body {
     margin: 0;
 }
 
+
+/* 
 li {
     list-style-type: none;
     display: inline-block;
@@ -16,26 +18,27 @@ ul {
     background-color: red;
     overflow: hidden;
     margin: 0;
-    margin-bottom: 3px;
-}
+    margin-bottom: 3px; */
 
+
+}
 #container {
     width: 80%;
     margin: auto;
     position: relative;
 }
 
-#first {
+/* #first {
     width: 80%;
     height: 850px;
-    background-image: url(https://udemy-images.udemy.com/course/750x422/505208_2307_4.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin: auto;
-    margin-bottom: 15px; 
-}
+    /* background-image: url(https://udemy-images.udemy.com/course/750x422/505208_2307_4.jpg); */
+background-repeat: no-repeat;
+background-size: 100% 100%;
+margin: auto;
+margin-bottom: 15px;
 
-.box {
+}
+*/ .box {
     box-sizing: border-box;
     width: 32.8%;
     display: inline-block;
@@ -43,7 +46,6 @@ ul {
     padding-left: 5px;
     text-align: justify;
 }
-
 .box img {
     width: 100%;
 }
@@ -56,14 +58,12 @@ ul {
     right: 0;
 
 } */
-
-#spec a{
+#spec a {
     display: block;
     text-decoration: none;
     border-bottom: 1px solid rgb(68, 57, 223);
     color: #54653e;
 }
-
 #spec {
     background-color: #ffbe00;
     vertical-align: top;
@@ -71,7 +71,6 @@ ul {
     height: 375px;
     font-size: 24px;
     line-height: 88px;
-    
 }
 footer {
     box-sizing: border-box;
@@ -81,4 +80,3 @@ footer {
     padding: 15px;
     padding-left: 10%;
 }
-

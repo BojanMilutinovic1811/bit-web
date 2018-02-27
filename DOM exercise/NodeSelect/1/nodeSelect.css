@@ -1,0 +1,21 @@
+.redback {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: wavy;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: wavy;
+}
