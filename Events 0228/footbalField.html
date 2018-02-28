@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Football Field</title>
+    <style>
+        body {
+            background-image: url('field.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid red;
+            height: 700px;
+        }
+        
+        #player {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="player.png" alt="player" width='90px' id="player">
+
+    <script>
+        var bodi = document.documentElement.lastElementChild;
+        console.log(bodi);
+        bodi.onclick = function moving(event) {
+            var playerX = document.querySelector('#player');
+            var iks = (event.clientX - 45) + 'px';
+            var ipsilon = (event.clientY - 45) + 'px';
+            console.log(event.clientX);
+            playerX.style.left = iks;
+            playerX.style.top = ipsilon;
+
+
+        }
+    </script>
+</body>
+
+</html>

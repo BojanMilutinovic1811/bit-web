@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inner HTML</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+
+    </div>
+    <div class="div2">
+
+    </div>
+
+    <script>
+        function buildElement(a, b) {
+            div1 = document.querySelector(b);
+            var div1Select = document.createElement('select');
+
+            for (i = 0; i < a.length; i++) {
+                var optionNode = document.createElement('option');
+                var optionText = document.createTextNode(a[i]);
+                optionNode.appendChild(optionText);
+                div1Select.appendChild(optionNode);
+            }
+
+            div1.appendChild(div1Select);
+        }
+
+        function innerHtml(a, b) {
+
+            var div1 = document.querySelector(b);
+            var div1Select = document.createElement('select');
+            for (var i = 0; i < a.length; i++) {
+                div1Select.innerHTML += '<option value="volvo">' + a[i] + '</option>';
+            }
+            div1.appendChild(div1Select);
+        }
+    </script>
+</body>
+
+</html>

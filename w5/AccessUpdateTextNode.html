@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul>
+        <li id="alert">This</li>
+        <li>Should</li>
+        <li>Be</li>
+        <li>Some</li>
+        <li>Navigation</li>
+    </ul>
+
+
+
+    <script>
+        function someAlert() {
+            var newAlert = document.getElementById("alert").textContent;
+            alert(newAlert);
+        };
+
+        function textArgument(newNavigation) {
+            var text = document.documentElement.lastElementChild.firstElementChild.lastElementChild.textContent = newNavigation;
+        }
+    </script>
+</body>
+
+</html>

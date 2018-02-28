@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events Exercise</title>
+    <style>
+        .someClass {
+            background-color: aquamarine;
+        }
+        
+        .redClass {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body class="someClass">
+
+    <input type="button" value="Toggle Background" onclick="toggleBackground()">
+    <input type="button" id='flash' value="Flash" onclick="flashBackground()">
+
+
+    <h1>Test</h1>
+
+
+
+    <script type="text/javascript">
+        function toggleBackground() {
+            document.documentElement.lastElementChild.classList.toggle("someClass");
+            document.documentElement.lastElementChild.classList.toggle("redClass");
+            // newBackground.classList.toggle("someClass");
+            var newEl = document.createElement("h1");
+            var textOfNewEl = document.createTextNode("Svakoga dana u svakom pogledu sve vise i vise napredujem!");
+            newEl.appendChild(textOfNewEl);
+            // var head = document.querySelector("body");
+            document.querySelector("body").appendChild(newEl)
+
+            // head.appendChild(newEl);
+
+        }
+        var timer, timer2, timer3;
+        var flash = false;
+
+        function flashBackground() {
+            timer3 = setInterval(function() {
+                document.querySelector('#flash').setAttribute('value', 'DiscoBall');
+                document.querySelector('body').classList.toggle('someClass');
+            }, 1000);
+            if (flash == false) {
+                timer = setInterval(function() {
+                    var newEl = document.createElement("h1");
+                    var textOfNewEl = document.createTextNode("Svakoga dana u svakom pogledu sve vise i vise napredujemo!");
+                    newEl.appendChild(textOfNewEl);
+                    // var head = document.querySelector("body");
+                    document.querySelector("body").appendChild(newEl)
+                }, 1000);
+                timer2 = setInterval(function() {
+                    toggleBackground()
+                }, 600);
+                flash = true;
+            } else {
+                clearInterval(timer);
+                clearInterval(timer2);
+                clearInterval(timer3);
+                flash = false;
+                document.querySelector('#flash').setAttribute('value', 'Flash');
+            }
+
+        }
+    </script>
+</body>
+
+</html>

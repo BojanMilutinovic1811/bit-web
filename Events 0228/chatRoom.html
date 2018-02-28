@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChatRoom</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        
+        div {
+            margin: 0 auto;
+            height: 900px;
+            width: 960px;
+            background-color: whitesmoke;
+        }
+        
+        section {
+            margin: 10px auto;
+            width: 960px;
+        }
+        
+        input {
+            display: inline-block;
+            height: 20px;
+        }
+        
+        #box {
+            width: 69%;
+            border: 1px blue solid;
+        }
+        
+        #sendButton {
+            width: 30%;
+            background-color: red;
+            color: whitesmoke;
+            border: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div width="960px">
+
+
+    </div>
+    <section>
+        <input type="text" name="text" id="box">
+        <input type="submit" value="Send" id="sendButton">
+    </section>
+    <script>
+        var buttonX = document.querySelector('#sendButton');
+        buttonX.onclick = function addText() {
+
+            var messageX = document.createTextNode(document.querySelector("#box").value);
+            var newP = document.createElement('p');
+            newP.appendChild(messageX);
+            document.querySelector('div').appendChild(newP);
+            document.querySelector('#box').value = '';
+        }
+        buttonX.addEventListener('click', addText);
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .selected {
+            border: 3px solid red;
+        }
+        
+        div>img {
+            width: 33%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="https://www.metoffice.gov.uk/binaries/content/gallery/mohippo/images/news/weather/snow/snow_write_1.jpg" alt="img">
+        <img class='selected' src="https://cdn.cnn.com/cnnnext/dam/assets/171226112510-erie-pennsylvania-snow-storm-1226-super-169.jpg" alt="img">
+        <img src="https://www.thesun.co.uk/wp-content/uploads/2018/02/nintchdbpict0003883582111.jpg?strip=all&w=960" alt="img">
+    </div>
+    <div>
+        <img src="https://wi-images.condecdn.net/image/ql00Lg3xAPw/crop/405/f/iStock-613015246.jpg" alt="img">
+        <img src="https://i2-prod.manchestereveningnews.co.uk/incoming/article14341866.ece/ALTERNATES/s615b/270218snow9.jpg" alt="img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv6Jih_aZVQe-jhQpmzhIRxEM8NYXVoFRvraS2IX0pma4LSYNUEQ" alt="img">
+    </div>
+
+
+    <script>
+        function borderSelect() {
+            imgNoBorder = document.querySelector('.selected');
+            imgBorder = imgNoBorder.parentNode.nextElementSibling.firstElementChild.nextElementSibling;
+            imgNoBorder.className = '';
+            imgBorder.className = 'selected';
+        }
+    </script>
+</body>
+
+</html>
