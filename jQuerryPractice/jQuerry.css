@@ -1,0 +1,11 @@
+.toUpper {
+    text-transform: uppercase;
+}
+
+.font {
+    color: aquamarine;
+}
+
+.back {
+    background-color: burlywood;
+}

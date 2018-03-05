@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        var arrayPictures = ["https://www.outdoorphotographer.com/images/stories/2016/may/landscapes/lead.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfFFwlft6R6K2mcPgwPiXb9NImpIELU32V4UPyVQfUsPa8VrH4", "https://www.designboom.com/wp-content/uploads/2017/02/architectural-fairy-tales-2017-last-day-mykhailo-ponomarenko-designboom-1800.jpg", "https://static1.squarespace.com/static/528134b9e4b0f7fd724c5770/55e1823ce4b01d70a6f1017b/55e1828be4b0dff1e50ae96e/1440842381060/ireland+landscapes+jason+lanier+photography+%2810%29.jpg"];
+        arrayPictures.forEach(function(element, index) {
+            $('body').append($('<img src=' + element + '>'));
+        });
+        var heading = $('<h1>Galery Name</h1>');
+        $('body').before(heading);
+        $('img').each(function(index, element) {
+
+
+        });
+
+
+        $("img").css("float", "left");
+    </script>
+</body>
+
+</html>

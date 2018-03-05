@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="jQuerry.css">
+</head>
+
+<body>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li id='active'>Email</li>
+        <li>Location</li>
+    </ul>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        console.log('Hello World!');
+        var middle = parseInt($('li').length / 2);
+        $(function() {
+            $("li:eq(0)").css('border-bottom', '1px solid black');
+            $("li").addClass('toUpper');
+            $('#active').addClass("font");
+            $('li:eq(' + middle + ')').addClass("back");
+
+        });
+    </script>
+</body>
+
+</html>
